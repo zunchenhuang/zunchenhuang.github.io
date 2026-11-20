@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I wish AI could solve P vs NP, and explain why</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+
+<p><a href="../index.html">← Home</a></p>
+<h1>I wish AI could solve P vs NP, and explain why</h1>
+
+<p>It is hard to believe that LLMs can take on million dollar worth mathematical problems. However, the math world is reputation based. Many reputable mathematicians have taken it seriously, e.g., the Navier–Stokes Millennium Prize Problem was claimed to be solved, including Fields medalists. So at this point, it is pretty safe to believe that state-of-the-art models have the potential to actually solve problems that have resisted generations of human mathematicians. Math manuscripts which contain proofs are notorious in the sense that they are highly abstracted, conceptually isolated, and logically intact*. The conclusions deduced should precisely correspond to the proposed theorems. These data cannot be better ingredients for feeding the training and fine tuning in the models - no labeling needed and extremely high quality of text (steps before and after are logically related to each other). Thanks to the development of formal verification tools, (partial) proofs can be automated and converted to machine checkable proofs based on type theory. The statements can be written in the syntactic format that includes mathematical objects which have their own types to describe mathematical concepts and relationships. Just like writing an ordinary proof on paper, these statements can be unfolded into steps with the help of LLM models automatically. Each new line of proof is type checked, meaning that it is mathematically sound, and we are sure it is absolutely correct**.</p>
+
+<p>Personally, complexity theory problems resonate more with me. My daily friends such as SAT/SMT solvers, model checkers, and static analyzers, which are tools that are designed to solve NP-hard problems in practice. For example, to find a solution in a boolean formula which encodes a practical problem in software verification, modern solvers can reliably find a satisfying assignment quickly (formulas can even have millions of variables). Verifying the correctness of the satisfying solution is trivial - substituting the assigning values of variables in the formula to see if the final output is true***. One may argue that industrial problems are not theoretical worst cases. But worst case scenarios also do not link to practical problems as well. Take the P vs NP problem, it is not like to find a special case to disapprove a mathematical conjecture where a counter example is enough. To show P is not equal to NP, one must prove a lower bound against every possible algorithm, and for half a century, CS theory researchers have been struggling to do so.</p>
+
+<p>It is widely believed that P and NP are not equal. That means verifying a solution is different from finding one. When we synthesize a solution, there are options to choose and decisions to make, and we are forbidden to know which way is better than the other in advance. That is fine and means things like heuristics, abstraction, and insights are essential. More interestingly, I wish AI can invent a wild new concept and find a way to argue and prove that P and NP are the same complexity class. Such a proof may be beyond my comprehension. That is not exactly what I want AI to give me. I want to know why. For example, what hidden structure in SAT,  traveling salesman problem, or graph coloring collapses the exponential search into a polynomial one? How can we understand it? To imagine even further, let’s treat curing cancer as a search problem. The objective is to search in the space of molecules that some specific structure can eliminate the tumor and save the patient. If P equals NP, finding a workable molecule could be as easy as recognizing it! It would be fascinating for us that AI can teach us how to recognize it. In software verification, the hardest part is often not the proof but having the correct specifications against the set of properties to work on. So maybe what I really want AI to teach me isn't just how to search fast, but how to know exactly what we're looking for. Even better, it would be wonderful if that “if P = NP” turned out to be true.</p>
+
+<p class="fn">* Published results routinely skip steps and sometimes can contain errors.</p>
+<p class="fn">** Under the assumptions that the trusted kernel and axioms, and no sorry. Certified theorem proving is an own research direction.</p>
+<p class="fn">*** On the other hand, verifying the UNSAT (unsatisfiability) of the formula is hard and practically often needed for software verification for safety and security guaratenes, which is a coNP problem.</p>
+
+</main>
+</body>
+</html>
