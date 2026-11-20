@@ -65,7 +65,7 @@ h2{
 .intro-text ul{padding-left:1.2em;margin:.4em 0 0}
 .intro-text li{margin:.2em 0}
 .intro .hero{
-  flex:0 0 250px;width:250px;
+  flex:0 0 340px;width:340px;
   background:var(--card);
   border:1px solid var(--rule);
   border-radius:16px;
@@ -98,6 +98,6 @@ p:not(.fn) + .fn{margin-top:3em;padding-top:1.4em;border-top:1px solid var(--rul
   .banner h1{font-size:2.1rem}
   main{padding:28px 20px 64px}
   .intro{flex-direction:column-reverse;gap:24px}
-  .intro .hero{flex:none;width:100%;max-width:240px;margin:0 auto}
+  .intro .hero{flex:none;width:100%;max-width:320px;margin:0 auto}
   h2{margin-top:56px}
 }
